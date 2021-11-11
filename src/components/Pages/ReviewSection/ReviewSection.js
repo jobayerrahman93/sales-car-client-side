@@ -12,7 +12,7 @@ const ReviewSection = () => {
 
     return (
         <div className="my-5">
-            <h1 className="py-5 text-center">Reviews</h1>
+            <h1 className="py-5 text-center"><span className="text-danger">REVI</span>EWS</h1>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-3 g-4">
 
@@ -24,7 +24,7 @@ const ReviewSection = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">
                                     
-                                        <Rating
+                                        <Rating className="text-warning"
                                         readonly
                                         initialRating={review.rating}
                                             emptySymbol="far fa-star"

@@ -42,7 +42,7 @@ const Review = () => {
     return (
         <div className="text-center">
             <div className="container">
-                <h3 className="my-5">REVIEW</h3>
+                <h3 className="my-5"><span className="text-danger">REVI</span>EW</h3>
 
                 <form className="w-50 mx-auto my-5" onSubmit={handleOnSubmit}>
                     <div className="input-group mb-3">

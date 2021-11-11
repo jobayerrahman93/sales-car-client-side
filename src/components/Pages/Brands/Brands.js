@@ -2,7 +2,7 @@ import React from 'react';
 
 const Brands = () => {
     return (
-        <div className="my-5 container h-50">
+        <div className="my-5 container h-50 bg-light py-5">
             <h3>Brands</h3>
             <div className="row">
                 <div className="col-md-3">

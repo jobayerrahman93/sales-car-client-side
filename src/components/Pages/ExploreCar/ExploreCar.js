@@ -13,7 +13,7 @@ const ExploreCar = () => {
 
     return (
         <div className="services-section">
-        <h1 className="py-5 text-center">Our Services</h1>
+        <h1 className="py-5 text-center"><span className="text-danger">Our</span> Services</h1>
         <div className="container">
             <div className="row row-cols-1 row-cols-md-3 g-4">
                
@@ -31,7 +31,7 @@ const ExploreCar = () => {
                             <div className="">
                            
                                 <Link  to={`/carDetails/${service._id}`}>
-                                    <button className="btn btn-info m-2">Purchase</button>
+                                    <button className="btn btn-warning m-2">Purchase</button>
                                 </Link>
                             </div>
                         </div>
