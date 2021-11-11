@@ -1,0 +1,25 @@
+.main-nav{
+    font-family: 'Saira', sans-serif;
+    font-size: 20px;
+
+}
+nav a{
+   
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+   
+    color: #033b4a!important;
+}
+
+nav a:hover{
+    color: #01d6a3!important;
+}
+
+li{
+    margin-right: 30px;
+}
+li a:active{
+    color: #01d6a3!important;
+
+}

@@ -1,0 +1,17 @@
+.banner-section{
+    height: 100vh;
+    background: url('../../../asssets/image/1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.title{
+    padding-top: 250px;
+    font-family: "Saira",sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #fff;
+
+}

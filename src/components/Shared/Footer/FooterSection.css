@@ -1,0 +1,26 @@
+.footer-section{
+    background: url("http://themetechmount.com/html/delmont/images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: "Saira"sans-serif;
+    overflow: hidden;
+    
+
+}
+li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+li{
+ list-style: none;   
+ padding-top: 15px;
+
+}
+
+.footer-section p{
+    font-family: "Ubuntu",Tahoma,Geneva,sans-serif;
+    font-weight: 400;
+}
