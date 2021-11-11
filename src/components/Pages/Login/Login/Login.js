@@ -76,7 +76,7 @@ const Login = () => {
                                 <p  className="my-3">New user ? Please register</p>
                             </Link>
 
-                            <button onClick={handleGoogleSignIn} className="btn btn-warning mx-5">google sign in</button>
+
                         </form>
                     </div>
                     <div className="col-md-6 ">
