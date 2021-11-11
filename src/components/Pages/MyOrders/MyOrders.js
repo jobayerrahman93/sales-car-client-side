@@ -8,7 +8,7 @@ const MyOrders = () => {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/myOrder")
+        fetch("https://protected-stream-55313.herokuapp.com/myOrder")
             .then(res => res.json())
             .then(data => {
               
@@ -29,7 +29,7 @@ const MyOrders = () => {
        const dltConfirm=window.confirm('are you sure want to delete this item ?')
 
        if(dltConfirm){
-           fetch(`http://localhost:5000/myOrder/${id}`,{
+           fetch(`https://protected-stream-55313.herokuapp.com/myOrder/${id}`,{
                method:"DELETE",
            })
            .then(res=>res.json())

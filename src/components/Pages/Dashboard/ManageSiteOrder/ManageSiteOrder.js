@@ -7,7 +7,7 @@ const ManageSiteOrder = () => {
 
     useEffect(()=>{
 
-        fetch("http://localhost:5000/dashboard/manageAllOrder")
+        fetch("https://protected-stream-55313.herokuapp.com/dashboard/manageAllOrder")
         .then(res=>res.json())
         .then(data=>setALLOrder(data))
 
@@ -18,7 +18,7 @@ const ManageSiteOrder = () => {
         const dltConfirm= window.confirm("are you want to delete this item ?")
 
         if(dltConfirm){
-            fetch(`http://localhost:5000/manageAllOrder/${id}`,{
+            fetch(`https://protected-stream-55313.herokuapp.com/manageAllOrder/${id}`,{
             method:"DELETE"
             
         })
@@ -44,7 +44,7 @@ const ManageSiteOrder = () => {
 
     const handleUpdateStatus=(id)=>{
 
-        fetch(`http://localhost:5000/manageAllOrder/${id}`,{
+        fetch(`https://protected-stream-55313.herokuapp.com/manageAllOrder/${id}`,{
             method:"PUT",
             headers:{
                 'content-type':'application/json'

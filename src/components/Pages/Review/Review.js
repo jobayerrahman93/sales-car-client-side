@@ -7,7 +7,7 @@ const Review = () => {
 
     const handleOnSubmit = (e) => {
 
-        fetch("http://localhost:5000/review",{
+        fetch("https://protected-stream-55313.herokuapp.com/review",{
             method:"POST",
             headers:{
                 'content-type':'application/json'

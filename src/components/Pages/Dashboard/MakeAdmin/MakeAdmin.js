@@ -20,7 +20,7 @@ const MakeAdmin = () => {
        
         const user={email};
 
-        fetch("http://localhost:5000/dashboard/makeAdmin", {
+        fetch("https://protected-stream-55313.herokuapp.com/dashboard/makeAdmin", {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'
