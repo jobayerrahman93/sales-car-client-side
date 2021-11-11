@@ -5,6 +5,7 @@ import AdminRoute from '../Login/AdminRoute/AdminRoute';
 import AddProduct from './AddProduct/AddProduct';
 import './Dashboard.css';
 import MakeAdmin from './MakeAdmin/MakeAdmin';
+import ManageProducts from './ManageProducts/ManageProducts';
 import ManageSiteOrder from './ManageSiteOrder/ManageSiteOrder';
 const Dashboard = () => {
 
@@ -29,39 +30,42 @@ const Dashboard = () => {
                     <Link to={`${url}/makeAdmin`}>
                         <h5>Make an Admin</h5>
                     </Link>
-                    <Link to="to={`${url}/manageProducts`}">
+                    <Link to={`${url}/manageProducts`}>
                         <h5>Manage Products</h5>
                     </Link>
                 </div>
                 <div className="col-md-9">
 
-                <Switch>
+                    <Switch>
 
-                <Route exact path={path}>
-                    <DashboardHome></DashboardHome>
-                </Route>
-                <Route path={`${path}/manageAllOrder`}>
-                  <ManageSiteOrder></ManageSiteOrder>
-                </Route>
-                <Route path={`${path}/addProducts`}>
-                <AddProduct></AddProduct>
-                </Route>
-                
-                <AdminRoute path={`${path}/makeAdmin`}>
-                   <MakeAdmin></MakeAdmin>
-                </AdminRoute>
-                {/* <Route path={`${path}/manageAllOrder`}>
+                        <Route exact path={path}>
+                            <DashboardHome></DashboardHome>
+                        </Route>
+                        <Route path={`${path}/manageAllOrder`}>
+                            <ManageSiteOrder></ManageSiteOrder>
+                        </Route>
+                        <Route path={`${path}/addProducts`}>
+                            <AddProduct></AddProduct>
+                        </Route>
+                        <Route path={`${path}/manageProducts`}>
+                            <ManageProducts></ManageProducts>
+                        </Route>
+
+                        <AdminRoute path={`${path}/makeAdmin`}>
+                            <MakeAdmin></MakeAdmin>
+                        </AdminRoute>
+                        {/* <Route path={`${path}/manageAllOrder`}>
                   <ManageSiteOrder></ManageSiteOrder>
                 </Route> */}
-                
-                
-            </Switch>
+
+
+                    </Switch>
 
                 </div>
             </div>
 
 
-           
+
 
         </div>
     );
