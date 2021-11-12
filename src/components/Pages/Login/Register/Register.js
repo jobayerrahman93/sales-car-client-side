@@ -13,7 +13,7 @@ const Register = () => {
 
     const history = useHistory();
 
-    console.log(registerData);
+    // console.log(registerData);
 
     const handleOnsubmit = (e) => {
 
@@ -33,8 +33,8 @@ const Register = () => {
         const handleOnChange = (e) => {
             const field = e.target.name;
             const value = e.target.value;
-            console.log(field);
-            console.log(value);
+            // console.log(field);
+            // console.log(value);
             const newLoginData = { ...registerData };
 
             newLoginData[field] = value;

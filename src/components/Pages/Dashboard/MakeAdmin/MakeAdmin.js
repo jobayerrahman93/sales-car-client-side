@@ -44,7 +44,7 @@ const MakeAdmin = () => {
 
 
             {
-                successAdmin && <div class="alert alert-success w-50 mx-auto my-5" role="alert">
+                successAdmin && <div className="alert alert-success w-50 mx-auto my-5" role="alert">
                 Make Admin Successfully
               </div>
             }

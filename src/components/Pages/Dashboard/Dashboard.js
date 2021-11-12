@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
+import { Link, Switch, useRouteMatch } from 'react-router-dom';
 import DashboardHome from '../Dashboard/DashboardHome/DashboardHome';
 import AdminRoute from '../Login/AdminRoute/AdminRoute';
 import AddProduct from './AddProduct/AddProduct';
@@ -38,18 +38,18 @@ const Dashboard = () => {
 
                     <Switch>
 
-                        <Route exact path={path}>
+                        <AdminRoute exact path={path}>
                             <DashboardHome></DashboardHome>
-                        </Route>
-                        <Route path={`${path}/manageAllOrder`}>
+                        </AdminRoute>
+                        <AdminRoute path={`${path}/manageAllOrder`}>
                             <ManageSiteOrder></ManageSiteOrder>
-                        </Route>
-                        <Route path={`${path}/addProducts`}>
+                        </AdminRoute>
+                        <AdminRoute path={`${path}/addProducts`}>
                             <AddProduct></AddProduct>
-                        </Route>
-                        <Route path={`${path}/manageProducts`}>
+                        </AdminRoute>
+                        <AdminRoute path={`${path}/manageProducts`}>
                             <ManageProducts></ManageProducts>
-                        </Route>
+                        </AdminRoute>
 
                         <AdminRoute path={`${path}/makeAdmin`}>
                             <MakeAdmin></MakeAdmin>

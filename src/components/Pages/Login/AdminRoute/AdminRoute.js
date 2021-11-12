@@ -11,7 +11,7 @@ const AdminRoute=({ children, ...rest })=> {
     
 
     if(isLoading){
-        return <span class="visually-hidden">Loading...</span>
+        return <span className="visually-hidden">Loading...</span>
       
     }
     

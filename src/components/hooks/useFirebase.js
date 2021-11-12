@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
 import { useEffect, useState } from 'react';
 import initializeAuthtication from "../Firebase/firebase.init";
 
@@ -9,17 +9,13 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [authError, setAuthError] = useState('');
-    const googleProvider = new GoogleAuthProvider();
-    const [admin,setAdmin]=useState(false);
-    // const [token,setToken]=useState('');
-
-
+    const [admin, setAdmin] = useState(false);
 
 
     const auth = getAuth();
 
     const registerUser = (email, password, name, history) => {
-        console.log(name);
+        // console.log(name);
 
         setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
@@ -27,21 +23,21 @@ const useFirebase = () => {
                 // Signed in 
                 const user = userCredential.user;
                 setAuthError('');
-                console.log(user);
-            
+                // console.log(user);
+
                 const newUser = { email, displayName: name };
 
-                saveUser(email, name,"POST");
-                console.log(newUser);
+                saveUser(email, name, "POST");
+                // console.log(newUser);
                 setUser(newUser);
 
-               
+
 
                 updateProfile(auth.currentUser, {
                     displayName: name
                 }).then(() => {
                     // Profile updated!
-                   alert("Registered Successfully")
+                    alert("Registered Successfully")
                 }).catch((error) => {
                     // An error occurred
                     // ...
@@ -71,9 +67,12 @@ const useFirebase = () => {
                 const user = userCredential.user;
                 setUser(user);
                 setAuthError('');
-                    console.log(user)
+                // console.log(user);
+
                 const destination = location?.state?.from || "/";
                 history.replace(destination);
+
+
 
 
 
@@ -123,7 +122,7 @@ const useFirebase = () => {
 
     // save user
 
-    const saveUser = (email, displayName,method) => {
+    const saveUser = (email, displayName, method) => {
 
         const users = { email, displayName };
 
@@ -135,25 +134,25 @@ const useFirebase = () => {
             body: JSON.stringify(users)
         })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => data)
 
     }
 
 
     //  get admin 
 
-     useEffect(()=>{
+    useEffect(() => {
 
         fetch(`https://protected-stream-55313.herokuapp.com/users/${user.email}`)
-        .then(res=>res.json())
-        .then(data=>setAdmin(data.admin))
-        },[user.email]);
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email]);
 
 
 
 
 
-console.log("firebase admin",admin);
+    // console.log("firebase admin",admin);
 
     return {
         registerUser,
@@ -163,7 +162,7 @@ console.log("firebase admin",admin);
         LoginUser,
         isLoading,
         authError
-       
+
     }
 };
 
