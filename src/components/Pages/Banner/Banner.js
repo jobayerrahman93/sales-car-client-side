@@ -15,7 +15,7 @@ const Banner = () => {
                     <h3>2016 ATURA ILX</h3>
                     <h6>High Performance & Outstanding Technology Combined</h6>
                     <Link to="/explore">
-                    <button className="btn btn-info">Explore</button>
+                    <button className="btn btn-danger">Explore</button>
                     </Link>
                     </div>
                 </div>

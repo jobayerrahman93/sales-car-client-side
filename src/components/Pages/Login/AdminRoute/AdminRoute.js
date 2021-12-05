@@ -7,7 +7,7 @@ const AdminRoute=({ children, ...rest })=> {
 
 
     const {user,isLoading,admin} = useAuth();
-    console.log('admin route',admin);
+    // console.log('admin route',admin);
     
 
     if(isLoading){

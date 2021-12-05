@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
+import Swal from 'sweetalert2';
 import useAuth from '../../hooks/useAuth';
 
 const CarDetails = () => {
@@ -36,7 +37,13 @@ const CarDetails = () => {
         .then(res=>res.json())
         .then(data=>{
             if(data.insertedId){
-                alert("Successfully place an order")
+                Swal.fire({
+                    position: 'top',
+                    icon: 'success',
+                    title: 'Succesfully order placed',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
             }
         })
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const Review = () => {
 
@@ -17,7 +18,13 @@ const Review = () => {
         .then(res=>res.json())
         .then(data=>{
             if(data.insertedId){
-                alert("Successfully Reviewed")
+                Swal.fire({
+                    position: 'top',
+                    icon: 'success',
+                    title: 'Succesfully reviewed',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
             }
         })
 

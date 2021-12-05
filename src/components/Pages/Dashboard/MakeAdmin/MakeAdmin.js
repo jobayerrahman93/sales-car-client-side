@@ -50,12 +50,13 @@ const MakeAdmin = () => {
             }
 
             <form onSubmit={handleOnSubmit}>
-                <input
+                <input 
+                className="w-25 py-1"
                  type="email" 
                  role="role" 
                  onBlur={handleOnBlur}
                  id="" />
-                 <button className="btn btn-primary mx-3" type="submit">Make Admin</button>
+                 <button className="btn btn-primary mx-2" type="submit">Make Admin</button>
 
             </form>
         </div>

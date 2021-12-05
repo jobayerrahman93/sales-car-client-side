@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
 import { useEffect, useState } from 'react';
+import Swal from "sweetalert2";
 import initializeAuthtication from "../Firebase/firebase.init";
 
 initializeAuthtication();
@@ -68,6 +69,25 @@ const useFirebase = () => {
                 setUser(user);
                 setAuthError('');
                 // console.log(user);
+
+                // sweet alert
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 1500,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                      toast.addEventListener('mouseenter', Swal.stopTimer)
+                      toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    }
+                  })
+                  Toast.fire({
+                    icon: 'success',
+                    title: 'Signed in successfully'
+                  });
+
+
 
                 const destination = location?.state?.from || "/";
                 history.replace(destination);

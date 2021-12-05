@@ -26,13 +26,13 @@ const Services = () => {
                             <img src={service.img} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{service.name}</h5>
-                                <h5 className="text-secondary">Price: $ {service.price}</h5>
+                                <h6 className="text-dark">Price:$ {service.price}</h6>
                                 <p className="card-text">{service.description}</p>
                             </div>
                             <div className="">
                            
                                 <Link  to={`/carDetails/${service._id}`}>
-                                    <button className="btn btn-outline-warning m-2">Purchase</button>
+                                    <button className="btn btn-danger fs-6 m-2">Purchase</button>
                                 </Link>
                             </div>
                         </div>

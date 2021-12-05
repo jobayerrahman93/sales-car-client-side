@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Swal from 'sweetalert2';
 
 const AddProduct = () => {
 
@@ -28,7 +29,14 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert("succefully inserted");
+                   
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Added a Product',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
                     // console.log(data);
 
                 }

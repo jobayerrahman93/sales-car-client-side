@@ -31,7 +31,7 @@ const ExploreCar = () => {
                             <div className="">
                            
                                 <Link  to={`/carDetails/${service._id}`}>
-                                    <button className="btn btn-warning m-2">Purchase</button>
+                                    <button className="btn btn-danger m-2">Purchase</button>
                                 </Link>
                             </div>
                         </div>

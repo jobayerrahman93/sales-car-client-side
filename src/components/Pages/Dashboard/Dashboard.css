@@ -1,7 +1,25 @@
-a{
-    text-decoration: none;
-    padding: 10px 0;
-    display: block;
-    color: black;
-   
+.dashboard-nav a {
+  text-decoration: none;
+  padding: 7px 90px;
+  display: block;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.dashboard-nav a:first-child {
+  margin-top: 100px;
+  background-color: cornsilk;
+  color: #000;
+}
+
+.dashboard-nav a:hover {
+  background-color: #f5f6fa;
+  color: #000;
+}
+.dashboard-nav {
+  background-color: #353b48;
+}
+.dashboard {
+  height: 100vh;
 }

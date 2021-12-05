@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const ManageSiteOrder = () => {
 
@@ -15,23 +16,62 @@ const ManageSiteOrder = () => {
 
     const handleDelete=(id)=>{
         
-        const dltConfirm= window.confirm("are you want to delete this item ?")
+        // sweetalert2
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+            if (result.isConfirmed) {
 
-        if(dltConfirm){
-            fetch(`https://protected-stream-55313.herokuapp.com/manageAllOrder/${id}`,{
-            method:"DELETE"
+                    fetch(`https://protected-stream-55313.herokuapp.com/manageAllOrder/${id}`,{
+                    method:"DELETE"
+                    
+                })
+                .then(res => res.json())
+                    .then(data => {
+                        if (data.deletedCount > 0) {
+                            Swal.fire(
+                                'Deleted!',
+                                'Your file has been deleted.',
+                                'success'
+                              )
+                            const remaining = allOrders.filter(remain => remain._id !== id);
+                            setALLOrder(remaining);
+                            
+        
+                        }
+                    })
+
+             
+            }
+          })
+
+
+
+
+    
+        // const dltConfirm= window.confirm("are you want to delete this item ?")
+
+        // if(dltConfirm){
+        //     fetch(`https://protected-stream-55313.herokuapp.com/manageAllOrder/${id}`,{
+        //     method:"DELETE"
             
-        })
-        .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount > 0) {
-                    alert("Succesfully deleted");
-                    const remaining = allOrders.filter(remain => remain._id !== id);
-                    setALLOrder(remaining)
+        // })
+        // .then(res => res.json())
+        //     .then(data => {
+        //         if (data.deletedCount > 0) {
+    
+        //             const remaining = allOrders.filter(remain => remain._id !== id);
+        //             setALLOrder(remaining)
 
-                }
-            })
-        }
+        //         }
+        //     })
+        // }
 
     }
 
@@ -63,7 +103,7 @@ const ManageSiteOrder = () => {
         <div className="">
 
             <div className="container">
-                <h1 className="my-5">Manage Order</h1>
+                <h1 className="my-5">All Order</h1>
 
                 <table className="table table-striped table-hover">
                     <thead>

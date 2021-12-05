@@ -1,25 +1,37 @@
-.main-nav{
-    font-family: 'Saira', sans-serif;
-    font-size: 20px;
-
+.main-nav {
+  font-family: "Saira", sans-serif;
+  font-size: 20px;
 }
-nav a{
-   
-    font-weight: 600;
-    text-transform: capitalize;
-    text-decoration: none;
-   
-    color: #033b4a!important;
+nav a {
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0;
+  color: #033b4a !important;
 }
 
-nav a:hover{
-    color: #01d6a3!important;
+.nav-design a:hover {
+  color: #01d6a3 !important;
+}
+.nav-design a::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 3px;
+  width: 0px;
+  margin: auto 0;
+  background: #2d3436;
+  transition: width 0.5s ease-in-out;
 }
 
-li{
-    margin-right: 30px;
+.nav-design a:hover::after {
+  display: block;
+  width: 100%;
 }
-li a:active{
-    color: #01d6a3!important;
 
+li {
+  margin-right: 30px;
+}
+li a:active {
+  color: #01d6a3 !important;
 }
