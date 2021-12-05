@@ -11,7 +11,7 @@ nav a {
 }
 
 .nav-design a:hover {
-  color: #01d6a3 !important;
+  color: #ee5253 !important;
 }
 .nav-design a::after {
   content: "";
@@ -34,4 +34,7 @@ li {
 }
 li a:active {
   color: #01d6a3 !important;
+}
+.navbar {
+  background-color: #f5f6fa !important;
 }

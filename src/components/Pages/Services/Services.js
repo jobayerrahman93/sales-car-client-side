@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Services.css';
 
 const Services = () => {
 
@@ -12,6 +13,8 @@ const Services = () => {
         .then(data=>setServices(data.slice(0,6)))
     },[]);
 
+   
+
     return (
         <div className="services-section">
         <h1 className="py-5 text-center"><span className="text-danger">Our</span> Services</h1>
@@ -23,8 +26,8 @@ const Services = () => {
                 {
                     services.map(service => <div key={service._id} className="col">
                         <div className="card h-100">
-                            <img src={service.img} className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            <img src={service.img} className="card-img-top services-img" alt="..." />
+                        <div className="card-body">
                                 <h5 className="card-title">{service.name}</h5>
                                 <h6 className="text-dark">Price:$ {service.price}</h6>
                                 <p className="card-text">{service.description}</p>

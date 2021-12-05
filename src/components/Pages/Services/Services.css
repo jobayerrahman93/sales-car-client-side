@@ -1,0 +1,7 @@
+.services-img {
+  transition: 0.5s ease-in-out;
+}
+
+.services-img:hover {
+  transform: scale(0.9);
+}

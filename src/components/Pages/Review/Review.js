@@ -37,12 +37,12 @@ const Review = () => {
 
         const field = e.target.name;
         const value = e.target.value;
-        console.log(field, value);
+        // console.log(field, value);
         const newData = { ...ratingData };
         newData[field] = value;
         setRatingData(newData);
 
-        console.log(newData);
+        // console.log(newData);
     }
 
 

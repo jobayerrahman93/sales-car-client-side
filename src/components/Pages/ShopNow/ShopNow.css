@@ -1,0 +1,6 @@
+.car {
+  background: url("../../../asssets/image/car.png");
+
+  height: 600px;
+  object-fit: cover;
+}
