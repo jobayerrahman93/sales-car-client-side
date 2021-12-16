@@ -13,14 +13,14 @@ const Services = () => {
 
 
   return (
-    <div className="services-section">
+    <div className="services-section my-5">
       <h1 className="py-5 text-center">
         <span className="text-danger">Our</span> Services
         <br/>
 
         {
-            services.length==0 && <div class="spinner-grow text-danger" role="status">
-            <span class="visually-hidden">Loading...</span>
+            services.length==0 && <div className="spinner-grow text-danger" role="status">
+            <span className="visually-hidden">Loading...</span>
           </div>
         }
       </h1>

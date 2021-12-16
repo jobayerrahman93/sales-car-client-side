@@ -16,32 +16,32 @@ const Dashboard = () => {
         <div className="col-md-3 dashboard-nav p-0 text-center">
           <Link to={`${url}`}>
             <div className="d-flex pt-2">
-             <h4> <i class="fas fa-bars mx-3"></i></h4>
+             <h4> <i className="fas fa-bars mx-3"></i></h4>
               <h5>Dashboard</h5>
             </div>
           </Link>
           <Link to={`${url}/manageAllOrder`}>
           <div className="d-flex">
-          <h5><i class="fas fa-minus-square mx-3"></i></h5>
+          <h5><i className="fas fa-minus-square mx-3"></i></h5>
             <h5>All Orders</h5>
           </div>
           </Link>
           <Link to={`${url}/addProducts`}>
           <div className="d-flex">
-          <h5><i class="fas fa-plus-square mx-3"></i></h5>
+          <h5><i className="fas fa-plus-square mx-3"></i></h5>
           <h5>Add a product </h5>
           </div>
           </Link>
           <Link to={`${url}/makeAdmin`}>
           <div className="d-flex">
-          <h5><i class="fas fa-users mx-3"></i></h5>
+          <h5><i className="fas fa-users mx-3"></i></h5>
           <h5>Make an Admin</h5>
           </div>
            
           </Link>
           <Link to={`${url}/manageProducts`}>
           <div className="d-flex">
-          <h5><i class="fab fa-product-hunt mx-3"></i></h5>
+          <h5><i className="fab fa-product-hunt mx-3"></i></h5>
           <h5>Manage Products</h5>
           </div>
            

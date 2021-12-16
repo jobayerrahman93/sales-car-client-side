@@ -43,7 +43,7 @@ const SharedNavigation = () => {
 
                             <span className="mt-3 mx-2">{user.displayName} </span>
 
-                            {!user.email? <h1 className="mx-3 mt-2"><i className="fas fa-user-circle"></i> </h1> :
+                            {!user.email || !user.photoURL ? <h1 className="mx-3 mt-2"><i className="fas fa-user-circle"></i> </h1> :
                             <img src={user.photoURL} width="50px" height="50px" className="rounded-circle mx-3 mt-2" alt=""/>}
                        
                             {user?.email?<li className="nav-item">
