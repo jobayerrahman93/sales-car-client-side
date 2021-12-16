@@ -34,6 +34,7 @@ const Services = () => {
                   src={service.img}
                   className="card-img-top services-img"
                   alt="..."
+                  height={277}
                 />
                 <div className="card-body">
                   <h5 className="card-title">{service.name}</h5>
