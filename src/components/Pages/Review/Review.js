@@ -47,7 +47,7 @@ const Review = () => {
 
 
     return (
-        <div className="text-center">
+        <div  className="text-center">
             <div className="container">
                 <h3 className="my-5"><span className="text-danger">REVI</span>EW</h3>
 

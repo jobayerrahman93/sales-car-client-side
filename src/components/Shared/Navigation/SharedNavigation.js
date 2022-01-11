@@ -23,6 +23,12 @@ const SharedNavigation = () => {
                             <li className="nav-item">
                                 <Link to="/">Home</Link>
                             </li>
+                            { !user.email&&<li className="nav-item">
+                                <a href='#service'>Service</a>
+                            </li>}
+                            {!user.email && <li className="nav-item">
+                                <a href='#review'>Review</a>
+                            </li>}
                             
                             { user.email && !admin &&<li className="nav-item">
                                 <Link to="/myOrder" >My Order</Link>

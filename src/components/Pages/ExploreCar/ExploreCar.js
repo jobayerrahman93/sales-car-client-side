@@ -12,7 +12,7 @@ const ExploreCar = () => {
     },[]);
 
     return (
-        <div className="services-section">
+        <div className="services-section my-3">
         <h1 className="py-5 text-center"><span className="text-danger">Our</span> Services</h1>
         <div className="container">
             <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -22,7 +22,7 @@ const ExploreCar = () => {
                 {
                     services.map(service => <div key={service._id} className="col">
                         <div className="card h-100">
-                            <img src={service.img} className="card-img-top" alt="..." />
+                            <img src={service.img} height={277} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{service.name}</h5>
                                 <h4 className="text-success">Price: $ {service.price}</h4>
