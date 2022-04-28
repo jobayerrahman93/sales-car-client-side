@@ -11,7 +11,7 @@ nav a {
 }
 
 .nav-color {
-  background-color: black !important;
+  background-color: #000 !important;
   transition: 0.5s ease-in;
 }
 
@@ -35,7 +35,8 @@ nav a {
 }
 
 li {
-  margin-right: 30px;
+  margin-left: 30px;
+  padding-top: 15px;
 }
 li a:active {
   color: #01d6a3 !important;
