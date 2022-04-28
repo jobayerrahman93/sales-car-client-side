@@ -12,7 +12,7 @@ const ReviewSection = () => {
 
     return (
         <div id='review'  className="my-5 pt-5">
-            <h1 className="py-5 text-center"><span className="text-danger">REVI</span>EWS</h1>
+            <h1 className="py-5 text-center section-title"><span className="text-danger">REVI</span>EWS</h1>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 

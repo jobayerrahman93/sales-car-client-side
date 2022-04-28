@@ -5,3 +5,7 @@
 .services-img:hover {
   transform: scale(0.9);
 }
+
+.section-title {
+  font-weight: 700;
+}
