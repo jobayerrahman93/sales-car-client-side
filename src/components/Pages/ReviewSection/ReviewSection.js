@@ -5,7 +5,7 @@ const ReviewSection = () => {
     const [reviews, setReview] = useState([]);
 
     useEffect(() => {
-        fetch('https://protected-stream-55313.herokuapp.com/review')
+        fetch('https://sales-car.herokuapp.com/review')
             .then(res => res.json())
             .then(data => setReview(data))
     }, []);

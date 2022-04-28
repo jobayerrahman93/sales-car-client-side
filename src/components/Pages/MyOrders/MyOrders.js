@@ -9,7 +9,7 @@ const MyOrders = () => {
 
     useEffect(() => {
 
-        fetch("https://protected-stream-55313.herokuapp.com/myOrder")
+        fetch("https://sales-car.herokuapp.com/myOrder")
             .then(res => res.json())
             .then(data => {
               
@@ -38,7 +38,7 @@ const MyOrders = () => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://protected-stream-55313.herokuapp.com/myOrder/${id}`,{
+                fetch(`https://sales-car.herokuapp.com/myOrder/${id}`,{
                method:"DELETE",
            })
            .then(res=>res.json())
@@ -54,7 +54,7 @@ const MyOrders = () => {
     //    const dltConfirm=window.confirm('are you sure want to delete this item ?')
 
     //    if(dltConfirm){
-    //        fetch(`https://protected-stream-55313.herokuapp.com/myOrder/${id}`,{
+    //        fetch(`https://sales-car.herokuapp.com/myOrder/${id}`,{
     //            method:"DELETE",
     //        })
     //        .then(res=>res.json())

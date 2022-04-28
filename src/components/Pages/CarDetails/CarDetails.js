@@ -9,7 +9,7 @@ const CarDetails = () => {
     const [singleCar, setSingleCar] = useState({});
 
     useEffect(() => {
-        fetch(`https://protected-stream-55313.herokuapp.com/carDetails/${carID}`)
+        fetch(`https://sales-car.herokuapp.com/carDetails/${carID}`)
             .then(res => res.json())
             .then(data => setSingleCar(data))
     }, []);
@@ -27,7 +27,7 @@ const CarDetails = () => {
 
         const orderDetails={orderName:singleCar.name,name,email,address,status:"pending"};
 
-        fetch("https://protected-stream-55313.herokuapp.com/carDetails/order",{
+        fetch("https://sales-car.herokuapp.com/carDetails/order",{
             method:"POST",
             headers:{
                 'content-type':'application/json'

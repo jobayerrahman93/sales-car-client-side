@@ -19,7 +19,7 @@ const AddProduct = () => {
 
         const addService = { name, description,price, img };
 
-        fetch('https://protected-stream-55313.herokuapp.com/addProducts', {
+        fetch('https://sales-car.herokuapp.com/addProducts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

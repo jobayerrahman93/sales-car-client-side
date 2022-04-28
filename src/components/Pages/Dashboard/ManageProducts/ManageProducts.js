@@ -6,13 +6,13 @@ const ManageProducts = () => {
     const [manageServices,setManageServices]=useState([]);
 
     useEffect(()=>{
-        fetch("https://protected-stream-55313.herokuapp.com/services")
+        fetch("https://sales-car.herokuapp.com/services")
         .then(res=>res.json())
         .then(data=>setManageServices(data))
     },[]);
 
     const handleDelete=(id)=>{
-        fetch(`https://protected-stream-55313.herokuapp.com/services/${id}`,{
+        fetch(`https://sales-car.herokuapp.com/services/${id}`,{
             method:"DELETE"
         })
         .then(res=>res.json())

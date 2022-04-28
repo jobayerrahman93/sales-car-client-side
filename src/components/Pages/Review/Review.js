@@ -8,7 +8,7 @@ const Review = () => {
 
     const handleOnSubmit = (e) => {
 
-        fetch("https://protected-stream-55313.herokuapp.com/review",{
+        fetch("https://sales-car.herokuapp.com/review",{
             method:"POST",
             headers:{
                 'content-type':'application/json'

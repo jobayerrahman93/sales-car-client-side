@@ -6,7 +6,7 @@ const Services = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("https://protected-stream-55313.herokuapp.com/services")
+    fetch("https://sales-car.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data.slice(0, 6)));
   }, []);

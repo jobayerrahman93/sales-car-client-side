@@ -8,7 +8,7 @@ const ManageSiteOrder = () => {
 
     useEffect(()=>{
 
-        fetch("https://protected-stream-55313.herokuapp.com/dashboard/manageAllOrder")
+        fetch("https://sales-car.herokuapp.com/dashboard/manageAllOrder")
         .then(res=>res.json())
         .then(data=>setALLOrder(data))
 
@@ -28,7 +28,7 @@ const ManageSiteOrder = () => {
           }).then((result) => {
             if (result.isConfirmed) {
 
-                    fetch(`https://protected-stream-55313.herokuapp.com/manageAllOrder/${id}`,{
+                    fetch(`https://sales-car.herokuapp.com/manageAllOrder/${id}`,{
                     method:"DELETE"
                     
                 })
@@ -58,7 +58,7 @@ const ManageSiteOrder = () => {
         // const dltConfirm= window.confirm("are you want to delete this item ?")
 
         // if(dltConfirm){
-        //     fetch(`https://protected-stream-55313.herokuapp.com/manageAllOrder/${id}`,{
+        //     fetch(`https://sales-car.herokuapp.com/manageAllOrder/${id}`,{
         //     method:"DELETE"
             
         // })
@@ -84,7 +84,7 @@ const ManageSiteOrder = () => {
 
     const handleUpdateStatus=(id)=>{
 
-        fetch(`https://protected-stream-55313.herokuapp.com/manageAllOrder/${id}`,{
+        fetch(`https://sales-car.herokuapp.com/manageAllOrder/${id}`,{
             method:"PUT",
             headers:{
                 'content-type':'application/json'
