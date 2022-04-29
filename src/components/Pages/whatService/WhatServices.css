@@ -1,0 +1,30 @@
+.what-services {
+  background: var(--default-bg);
+  padding: 100px 0;
+  color: #fff;
+}
+
+.what-services h1 {
+  font-weight: 700;
+}
+
+.what-box {
+  text-align: left;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.what-box:hover {
+  background: var(--section-bg);
+}
+
+.what-box h6 {
+  margin: 10px 0;
+  font-size: 21px;
+}
+
+.what-box i {
+  font-size: 25px;
+  color: var(--main-color);
+}

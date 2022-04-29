@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import useAuth from '../../hooks/useAuth';
+import SharedNavigation from '../../Shared/Navigation/SharedNavigation';
 
 const MyOrders = () => {
     const { user } = useAuth();
@@ -62,16 +63,17 @@ const MyOrders = () => {
     //    }
     }
 
-
     
     let rowCount=1;
     return (
-        <div>
-        
+        <>
 
+
+        <SharedNavigation></SharedNavigation>
+        
             <div className="my-order">
             <div className="container">
-                <h1 className="my-5">My Order</h1>
+                <h1 className="my-5 ">My Order</h1>
 
                 <table className="table table-striped table-hover">
                     <thead>
@@ -95,7 +97,7 @@ const MyOrders = () => {
                                 <td>{myOrder.status}</td>
                                 <td>
                                     <Link to={`/myOrder/${myOrder._id}`}>
-                                        <button onClick={()=>{deleteMyOrder(myOrder._id)}} className="btn btn-danger text-light">X</button>
+                                        <button onClick={()=>{deleteMyOrder(myOrder._id)}} className="btn btn-danger text-light"><i class="fa-solid fa-trash"></i></button>
                                     </Link>
                                 </td>
                             </tr>
@@ -109,7 +111,7 @@ const MyOrders = () => {
 
         </div>
             
-        </div>
+        </>
     );
 };
 

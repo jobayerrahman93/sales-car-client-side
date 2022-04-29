@@ -1,0 +1,14 @@
+.review-section {
+  background: var(--default-bg);
+  padding: 100px 0;
+}
+
+.review-section .card {
+  background: var(--section-bg);
+  color: #fff;
+}
+
+.brand-section {
+  background: var(--section-bg);
+  padding: 50px 0;
+}

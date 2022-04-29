@@ -62,13 +62,15 @@ const SharedNavigation = () => {
                             </li>
                             }
 
-                            <span className="mt-3 mx-2">{user.displayName} </span>
+                            
 
-                            {!user.email || !user.photoURL ? <h1 className="mx-3 mt-4"><i className="fas fa-user-circle text-light"></i> </h1> :
+                            {!user.email || !user.photoURL ? <h1 className="ms-4 mt-4">
+                            {/* <span className="mt-3 mx-2 text-light">{user.displayName} </span>  */}
+                                <i className="fas fa-user-circle text-light"></i> </h1> :
                             <img src={user.photoURL} width="50px" height="50px" className="rounded-circle mx-3 mt-4" alt=""/>}
                        
                             {user?.email?<li className="nav-item">
-                              <button onClick={logOut} className="btn btn-outline-danger">Log Out</button>
+                              <button onClick={logOut} className="btn btn-danger mt-4">Log Out</button>
                             </li>:
                              <li className="nav-item">
                              <Link to="/login">Login</Link>

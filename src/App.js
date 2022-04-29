@@ -12,7 +12,6 @@ import MyOrders from './components/Pages/MyOrders/MyOrders';
 import PageUnavailable from './components/Pages/PageUnavailable/PageUnavailable';
 import Pay from './components/Pages/Pay/Pay';
 import Review from './components/Pages/Review/Review';
-import SharedNavigation from './components/Shared/Navigation/SharedNavigation';
 
 function App() {
   
@@ -21,7 +20,7 @@ function App() {
     <>
       <AuthProvider>
         <BrowserRouter>
-          <SharedNavigation></SharedNavigation>
+          
           <Switch>
             <Route exact path="/">
               <Home></Home>

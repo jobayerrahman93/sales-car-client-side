@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Rating from 'react-rating';
+import './ReviewSection.css';
 
 const ReviewSection = () => {
     const [reviews, setReview] = useState([]);
@@ -11,8 +12,8 @@ const ReviewSection = () => {
     }, []);
 
     return (
-        <div id='review'  className="my-5 pt-5">
-            <h1 className="py-5 text-center section-title"><span className="text-danger">REVI</span>EWS</h1>
+        <div id='review' className=" pt-5 review-section">
+            <h1 className="py-5 text-center section-title text-light"><span className="text-danger">REVI</span>EWS</h1>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 

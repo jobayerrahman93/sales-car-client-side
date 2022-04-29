@@ -3,13 +3,14 @@
 }
 
 nav a {
-  font-weight: 600;
+  font-weight: 500;
   text-transform: capitalize;
   text-decoration: none;
   padding: 0;
   color: #fff !important;
   display: inline-block;
   padding: 30px 0;
+  font-size: 18px;
 }
 
 .nav-color {
@@ -50,4 +51,22 @@ nav {
 
 .btn-danger {
   background-color: var(--main-color) !important;
+}
+
+/* my order */
+
+.my-order {
+  padding-top: 100px;
+  background: var(--default-bg);
+  min-height: 100vh;
+  color: #fff;
+}
+
+.my-order th {
+  color: var(--main-color);
+}
+
+.my-order tbody tr th,
+td {
+  color: #fff !important;
 }

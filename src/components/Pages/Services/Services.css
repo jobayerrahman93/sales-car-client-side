@@ -27,3 +27,7 @@
 button {
   border: 0px !important;
 }
+
+.text-danger {
+  color: var(--main-color) !important;
+}
