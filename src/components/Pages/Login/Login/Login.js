@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
-import loginImage from '../../../../asssets/image/login.png';
+import loginImage from '../../../../asssets/image/car-garage.jpg';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css';
+
 
 const Login = () => {
 
@@ -40,11 +41,14 @@ const Login = () => {
 
 
     return (
+        <>
+
         <div className="login-page ">
-            <div className="container">
+ 
                 <div className="row">
-                    <div className="col-md-6">
-                        <form onSubmit={handleOnsubmit} className="mt-5 pt-5">
+                    <div className="col-md-6 px-0">
+                     <div className="form-container">
+                     <form onSubmit={handleOnsubmit} className="mt-5 pt-5">
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                                 <input
@@ -67,26 +71,27 @@ const Login = () => {
 
                             </div>
 
-                            <button type="submit" className="btn btn-primary">Login</button>
+                            <button type="submit" className="btn btn-danger w-100 mt-2">Login</button>
 
-                            <Link to="/register">
-                                <p  className="my-3">New user ? Please register</p>
+                            <Link className='text-decoration-none' to="/register">
+                                <p  className="my-3 text-white">New user ? Please register</p>
                             </Link>
 
 
                         </form>
+                     </div>
                     </div>
-                    <div className="col-md-6 ">
-                        <img className="img-fluid " src={loginImage} alt="" />
+                    <div className="col-md-6 px-0">
+                        <img className="img-fluid login-img" src={loginImage} alt="" />
                     </div>
                 </div>
 
 
             </div>
-        </div>
+  
 
 
-
+        </>
 
     );
 };

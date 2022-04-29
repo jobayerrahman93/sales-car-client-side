@@ -16,13 +16,17 @@ const SharedNavigation = () => {
     };
     window.addEventListener('scroll', changeNavbarColor);
 
+    // const location = useLocation();
+    // console.log(location);
+    
+
     return (
         <>
             
             <nav className={colorChange? "navbar navbar-expand-lg py-0 nav-color  main-nav": "navbar navbar-expand-lg py-0  main-nav"}>
                 <div className="container">
                     <a className="navbar-brand" href="#">
-                        <img src={carLogo} className="img-fluid" width="60" height="50" alt="" />
+                        <img src={carLogo} className="img-fluid" width="100" height="80" alt="" />
                     </a>
                     <button className="navbar-toggler text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon">
@@ -60,8 +64,8 @@ const SharedNavigation = () => {
 
                             <span className="mt-3 mx-2">{user.displayName} </span>
 
-                            {!user.email || !user.photoURL ? <h1 className="mx-3 mt-2"><i className="fas fa-user-circle"></i> </h1> :
-                            <img src={user.photoURL} width="50px" height="50px" className="rounded-circle mx-3 mt-2" alt=""/>}
+                            {!user.email || !user.photoURL ? <h1 className="mx-3 mt-4"><i className="fas fa-user-circle"></i> </h1> :
+                            <img src={user.photoURL} width="50px" height="50px" className="rounded-circle mx-3 mt-4" alt=""/>}
                        
                             {user?.email?<li className="nav-item">
                               <button onClick={logOut} className="btn btn-outline-danger">Log Out</button>

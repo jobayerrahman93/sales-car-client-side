@@ -1,17 +1,37 @@
-.banner-section{
-    height: 100vh;
-    background: url('../../../asssets/image/1.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+.banner-section {
+  background: url("../../../asssets/image/red-cars.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 260px 0 340px 0;
 }
 
-.title{
-    padding-top: 250px;
-    font-family: "Saira",sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #fff;
+/* .banner-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+} */
 
+.banner-section h4 span {
+  font-weight: 700;
+}
+
+.explore-btn {
+  border-radius: 999px;
+  padding: 5px 27px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0px;
+}
+.title {
+  padding-top: 250px;
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fff;
 }

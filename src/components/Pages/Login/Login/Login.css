@@ -1,0 +1,36 @@
+.login-page {
+  overflow-x: hidden;
+}
+
+.form-container {
+  padding: 100px 140px;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+}
+
+.login-page input {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.login-page .form-control:focus {
+  box-shadow: none;
+  border-color: #fff !important;
+}
+
+.login-page label {
+  color: #fff;
+}
+
+.form-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+.login-img {
+  height: 100vh;
+}
