@@ -5,11 +5,12 @@
   color: #fff;
   text-align: left;
   margin-bottom: 3px;
+  transition: 0.6s ease-in;
 }
 
 .dashboard-nav a:first-child {
   margin-top: 100px;
-  background-color: cornsilk;
+  background-color: #fff;
   color: #000;
 }
 
@@ -18,8 +19,24 @@
   color: #000;
 }
 .dashboard-nav {
-  background-color: #353b48;
+  background-color: var(--default-bg);
 }
 .dashboard {
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden !important;
+}
+
+.dashboard i {
+  color: var(--main-color);
+}
+
+.dashboard h5 {
+  font-size: 20px;
+}
+
+.manage-site-order th {
+  color: var(--main-color);
+}
+.manage-site-order tr td {
+  color: #000 !important;
 }

@@ -40,7 +40,7 @@ const MakeAdmin = () => {
 
     return (
         <div className="text-center">
-            <h2 className="my-5">Make an admin</h2>
+            <h1 className="my-5 fw-bold">Make an admin</h1>
 
 
             {
@@ -56,7 +56,7 @@ const MakeAdmin = () => {
                  role="role" 
                  onBlur={handleOnBlur}
                  id="" />
-                 <button className="btn btn-primary mx-2" type="submit">Make Admin</button>
+                 <button className="btn btn-danger mx-2" type="submit">Make Admin</button>
 
             </form>
         </div>

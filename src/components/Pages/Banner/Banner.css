@@ -35,3 +35,16 @@
   letter-spacing: 3px;
   color: #fff;
 }
+@media screen and (max-width: 575.98px) {
+  .banner-section {
+    padding: 167px 0 200px 0;
+  }
+
+  .car {
+    height: auto !important;
+    padding: 100px 0;
+  }
+  .car h1 {
+    font-size: 30px;
+  }
+}

@@ -7,13 +7,13 @@ const FooterSection = () => {
         <div className="py-5 footer-section">
         <div className="container">
             <div className="row justify-content-center">
-                <div className="col-md-4 col-lg-3 col-sm-12">
+                <div className="col-md-6 col-lg-3 col-sm-12">
                     <img src={carlogo} width="100" className="img-fluid" alt="" />
                  <div className="w-75">
                     <p className="mt-3 "> We are among the most qualified implant providers in the AUS with over 30 years of quality training and experience.</p>
                  </div>
                 </div>
-                <div className="col-md-4 col-lg-3 col-sm-12">
+                <div className="col-md-6 col-lg-3 col-sm-12">
                     <h3>Quick Links</h3>
                     
                    <ul>
@@ -25,7 +25,7 @@ const FooterSection = () => {
                    
                 </div>
 
-                <div className="col-md-4 col-lg-3 col-sm-12">
+                <div className="col-md-6 col-lg-3 col-sm-12">
                     <h3>Our Services</h3>
                     
                     <ul>
@@ -39,7 +39,7 @@ const FooterSection = () => {
                   
                 </div>
 
-                <div className="col-lg-3">
+                <div className="col-lg-3 col-md-6">
                 <div>
                         <h3>News Letter</h3>
                         <div className="input-group mb-3 mt-4">

@@ -15,7 +15,7 @@ const Login = () => {
 
 
     const handleOnsubmit = (e) => {
-
+console.log(loginData.email,loginData.password);
 
         LoginUser(loginData.email,loginData.password,location,history)
         e.preventDefault();

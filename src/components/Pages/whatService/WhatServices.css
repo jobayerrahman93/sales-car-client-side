@@ -28,3 +28,21 @@
   font-size: 25px;
   color: var(--main-color);
 }
+
+@media screen and (max-width: 575.98px) {
+  .brand-section .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .brand-section .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .brand-section .card {
+    margin-bottom: 20px;
+  }
+}

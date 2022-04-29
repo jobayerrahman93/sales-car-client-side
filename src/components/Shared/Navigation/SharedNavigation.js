@@ -30,7 +30,7 @@ const SharedNavigation = () => {
                     </a>
                     <button className="navbar-toggler text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon">
-                            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"/>
+                        <i class="fa-solid fa-bars"></i>
                         </span>
                     </button>
                     <div className="collapse  navbar-collapse" id="navbarNav">
@@ -70,7 +70,7 @@ const SharedNavigation = () => {
                             <img src={user.photoURL} width="50px" height="50px" className="rounded-circle mx-3 mt-4" alt=""/>}
                        
                             {user?.email?<li className="nav-item">
-                              <button onClick={logOut} className="btn btn-danger mt-4">Log Out</button>
+                              <button onClick={logOut} className="btn btn-danger mt-4 mb-md-4 mb-4 mb-lg-0">Log Out</button>
                             </li>:
                              <li className="nav-item">
                              <Link to="/login">Login</Link>

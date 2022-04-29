@@ -60,7 +60,7 @@ const useFirebase = () => {
     // sign in with email
 
     const LoginUser = (email, password, location, history) => {
-
+console.log(email,password);
         setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {

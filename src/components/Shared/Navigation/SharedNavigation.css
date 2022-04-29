@@ -62,11 +62,42 @@ nav {
   color: #fff;
 }
 
-.my-order th {
+.my-order > th {
   color: var(--main-color);
 }
 
-.my-order tbody tr th,
+.my-order > tbody tr th,
 td {
   color: #fff !important;
+}
+
+/* pay */
+
+.pay-section {
+  padding-top: 100px;
+  min-height: 100vh;
+  background: var(--section-bg);
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    background: var(--section-bg);
+  }
+
+  nav a {
+    padding: 8px 0;
+    font-size: 16px;
+  }
+  .navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-toggler {
+    padding: 5px 10px;
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 2px;
+  }
 }

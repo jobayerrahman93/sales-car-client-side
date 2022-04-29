@@ -1,6 +1,7 @@
 .review-section {
   background: var(--default-bg);
   padding: 100px 0;
+  min-height: 100vh;
 }
 
 .review-section .card {

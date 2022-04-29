@@ -27,7 +27,7 @@ const ManageProducts = () => {
 
     return (
         <div className="container">
-            <h1 className="my-5">Manage Products</h1>
+            <h1 className="my-5 fw-bold">Manage Products</h1>
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
             {
                 manageServices.map(service=> <div key={service._id} className="col">

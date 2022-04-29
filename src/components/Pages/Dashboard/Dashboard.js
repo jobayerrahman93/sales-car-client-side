@@ -11,8 +11,8 @@ const Dashboard = () => {
   let { path, url } = useRouteMatch();
 
   return (
-    <div>
-      <div className="row dashboard">
+    <div className="dashboard">
+      <div className="row">
         <div className="col-md-3 dashboard-nav p-0 text-center">
           <Link to={`${url}`}>
             <div className="d-flex pt-2">

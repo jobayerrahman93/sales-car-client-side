@@ -46,7 +46,7 @@ const AddProduct = () => {
     return (
         <div className="vh-100 ">
             <div className="w-50 mx-auto add-service-info">
-                <h2 className="py-5 text-center">Please add services </h2>
+                <h1 className="py-5 text-center fw-bold">Please add services </h1>
 
                 <label htmlFor="exampleInputName" className="form-label">Name</label>
                 <input ref={nameRef} type="text" className="form-control" id="exampleInputName" />
@@ -60,7 +60,7 @@ const AddProduct = () => {
                 <label htmlFor="exampleInputName" className="form-label">Image</label>
                 <input ref={imgRef} type="text" className="form-control" id="exampleInputName" />
 
-                <button onClick={handleSubmit} className="btn btn-success my-4" type="submit">Submit</button>
+                <button onClick={handleSubmit} className="btn btn-danger my-4" type="submit">Submit</button>
             </div>
         </div>
     );

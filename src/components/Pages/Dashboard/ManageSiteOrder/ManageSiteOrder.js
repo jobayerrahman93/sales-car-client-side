@@ -100,10 +100,10 @@ const ManageSiteOrder = () => {
     let rowCount=1;
 
     return (
-        <div className="">
+        <div className="manage-site-order">
 
             <div className="container">
-                <h1 className="my-5">All Order</h1>
+                <h1 className="my-5 fw-bold">All Order</h1>
 
                 <table className="table table-striped table-hover">
                     <thead>
@@ -134,7 +134,7 @@ const ManageSiteOrder = () => {
                                 </td>
                                 <td>
                                     <Link to={`/dashboard/manageAllOrder`}>
-                                        <button onClick={() => { handleDelete(manage._id) }} className="btn btn-danger text-light">X</button>
+                                        <button onClick={() => { handleDelete(manage._id) }} className="btn btn-danger text-light"><i class="fa-solid fa-trash text-white"></i></button>
                                     </Link>
                                 </td>
                             </tr>

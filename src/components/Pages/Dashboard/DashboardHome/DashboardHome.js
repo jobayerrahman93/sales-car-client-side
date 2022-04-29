@@ -8,8 +8,8 @@ const DashboardHome = () => {
     
     return (
         <div style={{background:"#f5f6fa",height:"100vh"}} className=" text-center">
-            <h3 className="py-5 text-dark">Dashboard Section</h3>
-            <h3><span className="text-primary ">Hello</span>, {user.displayName} !! Have a nice day</h3>
+            <h1 className="py-5 fw-bold">Dashboard Section</h1>
+            <h3 className='fw-bold'><span className="text-danger">Hello</span>, {user.displayName} !! Have a nice day</h3>
         </div>
     );
 };

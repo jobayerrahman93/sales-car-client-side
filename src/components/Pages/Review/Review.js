@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
+import SharedNavigation from '../../Shared/Navigation/SharedNavigation';
 
 const Review = () => {
 
@@ -47,9 +48,15 @@ const Review = () => {
 
 
     return (
-        <div  className="text-center review-section">
+
+
+        <>
+
+<SharedNavigation></SharedNavigation>
+
+          <div  className="text-center review-section">
             <div className="container">
-                <h1 className="my-5 section-title text-light"><span className="text-danger">REVI</span>EW</h1>
+                <h1 className="my-5 section-title text-light "><span className="text-danger ">REVI</span>EW</h1>
 
                 <form className="w-50 mx-auto my-5" onSubmit={handleOnSubmit}>
                     <div className="input-group mb-3">
@@ -74,10 +81,14 @@ const Review = () => {
                       
                     </div>
 
-                    <button type="submit" className="btn btn-primary w-100 my-3">Submit</button>
+                    <button type="submit" className="btn btn-danger w-100 my-3">Submit</button>
                 </form>
             </div>
         </div>
+        </>
+
+
+      
     );
 };
 
