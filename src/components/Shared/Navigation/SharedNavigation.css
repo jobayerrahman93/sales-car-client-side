@@ -13,7 +13,7 @@ nav a {
 }
 
 .nav-color {
-  background-color: #000 !important;
+  background-color: var(--section-bg) !important;
   transition: 0.5s ease-in;
 }
 

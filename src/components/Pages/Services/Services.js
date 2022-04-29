@@ -13,9 +13,9 @@ const Services = () => {
 
 
   return (
-    <div id="service" className="services-section my-5 pt-5">
-      <h1 className="py-5 text-center section-title">
-        <span className="text-danger">Our</span> Services
+    <div id="service" className="services-section pt-5">
+      <h1 className="py-5 text-center section-title text-light">
+        <span className="main-color">Our</span> Services
         <br/>
 
         {
@@ -34,12 +34,12 @@ const Services = () => {
                   src={service.img}
                   className="card-img-top services-img"
                   alt="..."
-                  height={277}
+                  height={230}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{service.name}</h5>
-                  <h6 className="text-dark">Price:$ {service.price}</h6>
-                  <p className="card-text">{service.description}</p>
+                  <h5 className="card-title text-light">{service.name}</h5>
+                  <h5 className=" text-danger">$ {service.price}</h5>
+                  <p className="card-text  text-light">{service.description}</p>
                 </div>
                 <div className="">
                   <Link to={`/carDetails/${service._id}`}>

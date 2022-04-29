@@ -1,11 +1,29 @@
 .services-img {
   transition: 0.5s ease-in-out;
+  padding: 10px 15px;
+  border-radius: 10px !important;
 }
 
-.services-img:hover {
+/* .services-img:hover {
   transform: scale(0.9);
-}
+} */
 
 .section-title {
   font-weight: 700;
+}
+.services-section {
+  background: var(--section-bg);
+  padding: 100px 0;
+  z-index: -1;
+}
+.services-section .card {
+  background-color: var(--default-bg);
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+button {
+  border: 0px !important;
 }

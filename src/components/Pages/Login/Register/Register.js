@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import loginImage from '../../../../asssets/image/login.png';
+import loginImage from '../../../../asssets/image/car-garage.jpg';
 import useAuth from '../../../hooks/useAuth';
 import "./Register.css";
 
@@ -43,11 +43,11 @@ const Register = () => {
         }
 
         return (
-            <div className="login-page ">
-                <div className="container">
+            <div className="register-page ">
                     <div className="row">
-                        <div className="col-md-6">
-                            <form onSubmit={handleOnsubmit} className="mt-5 pt-5">
+                        <div className="col-md-6 px-0">
+                           <div className="register-container">
+                           <form onSubmit={handleOnsubmit} className="mt-5 pt-5">
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputPassword1" className="form-label">Name</label>
                                     <input
@@ -94,23 +94,24 @@ const Register = () => {
 
                                 </div>
 
-                                <button type="submit" className="btn btn-primary">Register</button>
+                                <button type="submit" className="btn btn-danger w-100">Register</button>
 
-                                <Link to="/login">
-                                    <p className="my-3">already registered ? Please login</p>
+                                <Link className='text-decoration-none' to="/login">
+                                    <p className="my-3 text-white">already registered ? Please login</p>
                                 </Link>
 
 
                             </form>
+                           </div>
                         </div>
-                        <div className="col-md-6 ">
-                            <img className="img-fluid " src={loginImage} alt="" />
+                        <div className="col-md-6 px-0">
+                            <img className="img-fluid register-img" src={loginImage} alt="" />
                         </div>
                     </div>
 
 
                 </div>
-            </div>
+     
         );
     };
 

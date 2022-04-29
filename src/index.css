@@ -10,6 +10,8 @@ body {
 
 :root {
   --main-color: #a90b22;
+  --section-bg: #00000e;
+  --default-bg: #201d1d59;
 }
 
 h1,
