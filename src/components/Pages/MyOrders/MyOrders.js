@@ -75,7 +75,8 @@ const MyOrders = () => {
             <div className="container">
                 <h1 className="my-5 ">My Order</h1>
 
-                <table className="table table-striped table-hover">
+             <div className="table-responsive">
+             <table className="table table-responsive table-striped table-hover">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -106,6 +107,7 @@ const MyOrders = () => {
 
                     </tbody>
                 </table>
+             </div>
             </div>
 
 

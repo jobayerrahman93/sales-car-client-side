@@ -62,11 +62,11 @@ nav {
   color: #fff;
 }
 
-.my-order > th {
+.my-order th {
   color: var(--main-color);
 }
 
-.my-order > tbody tr th,
+.my-order tbody tr th,
 td {
   color: #fff !important;
 }

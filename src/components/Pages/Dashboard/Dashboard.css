@@ -40,3 +40,19 @@
 .manage-site-order tr td {
   color: #000 !important;
 }
+
+/* product details */
+
+.booking-details-section {
+  background: var(--section-bg);
+  min-height: 100vh;
+  padding-top: 200px;
+}
+
+.booking-details-section label {
+  color: #fff;
+}
+
+.booking-details-section input {
+  margin-bottom: 10px;
+}
