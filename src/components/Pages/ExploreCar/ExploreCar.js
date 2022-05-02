@@ -17,7 +17,7 @@ const ExploreCar = () => {
         <>
         <SharedNavigation></SharedNavigation>
 
-        <div className="services-section">
+        <div className="services-section explore-services-section">
         <h1 className="py-5 text-center section-title text-light">
         <span className="main-color">Our</span> Services
         <br/>
