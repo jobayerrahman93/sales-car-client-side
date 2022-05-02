@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import SharedNavigation from '../../Shared/Navigation/SharedNavigation';
 
 const ExploreCar = () => {
     const [services,setServices]=useState([]);
@@ -12,8 +13,12 @@ const ExploreCar = () => {
     },[]);
 
     return (
-        <div className="services-section my-3">
-        <h1 className="py-5 text-center"><span className="text-danger">Our</span> Services</h1>
+
+        <>
+        <SharedNavigation></SharedNavigation>
+
+        <div className="services-section">
+        <h1 className="py-5 text-center section-title text-light"><span className="text-danger">Our</span> Services</h1>
         <div className="container">
             <div className="row row-cols-1 row-cols-md-3 g-4">
                
@@ -24,9 +29,9 @@ const ExploreCar = () => {
                         <div className="card h-100">
                             <img src={service.img} height={277} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">{service.name}</h5>
-                                <h4 className="text-success">Price: $ {service.price}</h4>
-                                <p className="card-text">{service.description}</p>
+                                <h5 className="card-title text-light">{service.name}</h5>
+                                <h5 className="text-danger">$ {service.price}</h5>
+                                <p className="card-text text-light">{service.description}</p>
                             </div>
                             <div className="">
                            
@@ -43,6 +48,9 @@ const ExploreCar = () => {
             </div>
         </div>
     </div>
+        </>
+
+        
 
 
     );
