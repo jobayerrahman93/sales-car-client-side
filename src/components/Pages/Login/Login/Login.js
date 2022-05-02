@@ -8,14 +8,17 @@ import './Login.css';
 const Login = () => {
 
     const [loginData, setLoginData] = useState('');
-    const {LoginUser}=useAuth();
+    const {LoginUser,authError}=useAuth();
+    
+    // console.log('login',authError);
+    
 
     const location=useLocation();
     const history=useHistory();
 
 
     const handleOnsubmit = (e) => {
-console.log(loginData.email,loginData.password);
+        console.log(loginData.email,loginData.password);
 
         LoginUser(loginData.email,loginData.password,location,history)
         e.preventDefault();
@@ -48,6 +51,11 @@ console.log(loginData.email,loginData.password);
                 <div className="row">
                     <div className="col-md-6 px-0">
                      <div className="form-container">
+
+                        <div className="authError text-center">
+                            <p className='text-danger mb-0'>{authError}</p>
+                        </div>
+
                      <form onSubmit={handleOnsubmit} className="mt-5 pt-5">
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>

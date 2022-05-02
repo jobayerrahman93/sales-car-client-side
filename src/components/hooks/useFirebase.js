@@ -73,7 +73,7 @@ console.log(email,password);
                 // sweet alert
                 const Toast = Swal.mixin({
                     toast: true,
-                    position: 'top-end',
+                    position: 'bottom-start',
                     showConfirmButton: false,
                     timer: 1500,
                     timerProgressBar: true,
@@ -101,6 +101,7 @@ console.log(email,password);
 
                 const errorMessage = error.message;
                 setAuthError(errorMessage)
+                console.log(errorMessage);
             }).finally(() => setIsLoading(false));
     }
 
