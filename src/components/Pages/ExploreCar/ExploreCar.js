@@ -18,8 +18,19 @@ const ExploreCar = () => {
         <SharedNavigation></SharedNavigation>
 
         <div className="services-section">
-        <h1 className="py-5 text-center section-title text-light"><span className="text-danger">Our</span> Services</h1>
+        <h1 className="py-5 text-center section-title text-light">
+        <span className="main-color">Our</span> Services
+        <br/>
+
+        {
+            services.length==0 && <div className="spinner-grow text-danger" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        }
+      </h1>
         <div className="container">
+
+    
             <div className="row row-cols-1 row-cols-md-3 g-4">
                
               
